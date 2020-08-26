@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calculate View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lesson2_Basic_Swift_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalculateViewController" customModule="Lesson2_Basic_Swift_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,32 +30,44 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="NMa-Q3-ikW">
                                         <rect key="frame" x="25" y="58" width="364" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q33-CT-Id5">
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q33-CT-Id5">
                                                 <rect key="frame" x="0.0" y="0.0" width="88" height="40"/>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                                                <color key="tintColor" red="0.78264719250000003" green="0.3892419338" blue="0.51765382289999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="0 %">
                                                     <color key="titleColor" red="0.88235294119999996" green="0.1137254902" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJc-Zm-3La"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-qM-bXq">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-qM-bXq">
                                                 <rect key="frame" x="138" y="0.0" width="88" height="40"/>
-                                                <color key="backgroundColor" red="0.88235294117647056" green="0.11372549019607843" blue="0.45490196078431372" alpha="0.62" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                                                <color key="tintColor" red="0.84117490049999999" green="0.35694390539999998" blue="0.51765435930000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="10 %">
+                                                    <color key="titleColor" red="0.84117490049999999" green="0.35694390539999998" blue="0.51765435930000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <state key="selected">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Zm-l4-3Xb"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNA-eY-mDC">
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNA-eY-mDC">
                                                 <rect key="frame" x="276" y="0.0" width="88" height="40"/>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                                                <color key="tintColor" red="0.78264719250000003" green="0.3892419338" blue="0.51765382289999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="20%">
                                                     <color key="titleColor" red="0.88235294119999996" green="0.1137254902" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2q-qR-Fss"/>
@@ -84,12 +96,12 @@
                                                 <color key="textColor" red="0.88235294119999996" green="0.1137254902" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LU2-KJ-5mY">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LU2-KJ-5mY">
                                                 <rect key="frame" x="120" y="0.0" width="94" height="32"/>
-                                                <color key="backgroundColor" red="0.88235294119999996" green="0.1137254902" blue="0.4549019608" alpha="0.75" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.72757762670000004" green="0.2465530038" blue="0.4156931639" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
-                                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ONu-RS-nej"/>
+                                                    <action selector="SteperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="njo-Qo-s24"/>
                                                 </connections>
                                             </stepper>
                                         </subviews>
@@ -111,6 +123,7 @@
                                         </state>
                                         <connections>
                                             <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jdo-jj-YJk"/>
+                                            <segue destination="kFr-2z-KI3" kind="presentation" identifier="goToResults" id="UUF-lm-YEB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -144,16 +157,16 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e.g. 123.56" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eRx-jd-D8U">
                                 <rect key="frame" x="25" y="84" width="364" height="40"/>
-                                <color key="backgroundColor" red="0.56460428240000005" green="0.76042813060000003" blue="0.54898887870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="myZ-RB-Gxw"/>
                                 </constraints>
-                                <color key="textColor" red="0.506066978" green="0.77265936140000002" blue="0.52545315029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.78264719250000003" green="0.3892419338" blue="0.51765382289999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="0.25098039215686274" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.78264719250000003" green="0.3892419338" blue="0.51765382289999995" alpha="0.49515845070422537" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -175,7 +188,9 @@
                     </view>
                     <connections>
                         <outlet property="billTextfield" destination="eRx-jd-D8U" id="qHo-rr-9yO"/>
+                        <outlet property="calculateBtn" destination="CBQ-JA-UIa" id="d5Q-cX-TDu"/>
                         <outlet property="splitNumberLabel" destination="qF6-ai-eqx" id="pOZ-rR-xFQ"/>
+                        <outlet property="stepperButton" destination="LU2-KJ-5mY" id="dg3-EI-iFV"/>
                         <outlet property="tenPctBtn" destination="5Bt-qM-bXq" id="wQl-Sh-vEl"/>
                         <outlet property="twentyPctBtn" destination="ZNA-eY-mDC" id="7Fn-yr-joK"/>
                         <outlet property="zeroPctBtn" destination="q33-CT-Id5" id="Giq-7Q-dWJ"/>
@@ -183,14 +198,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108.69565217391305" y="109.82142857142857"/>
+            <point key="canvasLocation" x="-484" y="-70"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="9Zn-Oz-r4V">
             <objects>
                 <viewController id="kFr-2z-KI3" customClass="ResultViewController" customModule="Lesson2_Basic_Swift_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FGw-xQ-2n3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCg-QR-uzm">
@@ -225,7 +240,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hkh-sV-Dma">
-                                <rect key="frame" x="57" y="817" width="300" height="45"/>
+                                <rect key="frame" x="57" y="763" width="300" height="45"/>
                                 <color key="backgroundColor" red="0.88235294119999996" green="0.1137254902" blue="0.4549019608" alpha="0.61732504399999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="g4l-be-aWo"/>
